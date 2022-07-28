@@ -3,9 +3,16 @@ const writeFile = require('../writeFile');
 const fs = require('fs');
 const sinon = require('sinon');
 
-describe('executa a funcao verifyNumber', () => {
-    describe('quando o número for maior que 0', () => {
-        describe('a resposta é', () => {
+describe('executa a funcao writeFile', () => {
+    describe('quando o texto for autenticado', () => {
+        before(() => {
+            sinon.stub(fs, 'writeFileSync');
+        });
+
+        after(() => {
+            fs.writeFileSync.restore();
+        })
+        describe('arquivo sendo verificado', () => {
             it('é uma string', () => {
                 const resposta = writeFile('arquivo.txt', '#BoredThanEver');
 
