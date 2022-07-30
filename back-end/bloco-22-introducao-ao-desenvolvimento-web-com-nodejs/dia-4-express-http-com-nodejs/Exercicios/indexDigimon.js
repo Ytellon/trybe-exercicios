@@ -2,7 +2,7 @@ const express = require('express');
 
 const bodyParser = require('body-parser');
 
-const { getDigimons } = require('./digimon.js');
+const { getDigimons, setDigimons } = require('./digimon.js');
 
 const app = express();
 
@@ -29,6 +29,23 @@ app.get('/digimons/:name', async (req, res) => {
         return res.status(200).json(digimon);
     }
     catch (err) {
+        return res.status(500).json({ "message": "Internal Server Error" });
+    }
+})
+
+app.post('/digimons', async (req, res) => {
+    try {
+        const { name, img, level } = req.body;
+        const newDigimon = { name, img, level };
+        const digimons = await getDigimons();
+        const digimon = digimons.find(digimon => digimon.name.toLowerCase() === name.toLowerCase());
+        if (digimon) {
+            return res.status(409).json({ "message": "Digimon already exists" });
+        }
+        digimons.push(newDigimon);
+        await setDigimons(digimons);
+        return res.status(204).end();
+    } catch (err) {
         return res.status(500).json({ "message": "Internal Server Error" });
     }
 })
