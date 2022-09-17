@@ -1,0 +1,30 @@
+{
+  "name": "exe-26-3",
+  "version": "1.0.0",
+  "description": "Este é um repositório de template construído sobre a arquitetura MSC para a realização do exercício do dia 26.3. No mesmo temos a seguinte estrutura que contém uma representação mínima de uma aplicação em typescript com express:",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node ./",
+    "build": "rimraf ./dist && tsc -p .",
+    "dev": "ts-node-dev --transpile-only --respawn --inspect --project tsconfig.json .index.ts",
+    "lint": "eslint . --ext .ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tryber/sd-017-day-26-3-exercise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tryber/sd-017-day-26-3-exercise/issues"
+  },
+  "homepage": "https://github.com/tryber/sd-017-day-26-3-exercise#readme",
+  "dependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "dotenv": "^16.0.1",
+    "ts-node": "^10.8.1",
+    "ts-node-dev": "^2.0.0"
+  }
+}
