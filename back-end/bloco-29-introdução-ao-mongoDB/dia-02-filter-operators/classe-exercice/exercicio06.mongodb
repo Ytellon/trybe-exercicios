@@ -1,0 +1,4 @@
+use("aula_29_2");
+
+// filmes lançados em 1993
+db.filmes.find({ano: 1993})

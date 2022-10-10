@@ -1,0 +1,4 @@
+use("aula_29_2");
+
+// filmes lançados antes de 2000
+db.filmes.find({ "ano": { $lt: 2000 } });

@@ -1,0 +1,4 @@
+use("aula_29_2");
+
+// filmes lançados a entre 1993 e 2000
+db.filmes.find({ano: {$gte: 1993, $lte: 2000}})

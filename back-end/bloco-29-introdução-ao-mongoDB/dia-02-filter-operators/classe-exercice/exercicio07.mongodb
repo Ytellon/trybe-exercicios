@@ -1,0 +1,4 @@
+use("aula_29_2");
+
+// filmes que tem 7 avaliações boas ou mais
+db.filmes.find({"avaliacao.bom": {$gte: 7}})

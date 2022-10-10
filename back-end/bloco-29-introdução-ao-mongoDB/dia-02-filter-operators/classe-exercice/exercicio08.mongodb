@@ -1,0 +1,4 @@
+use("aula_29_2");
+
+// filmes que não tenham avaliação ruim maior que 7
+db.filmes.find({"avaliacao.ruim": { $ne: 7 }});
