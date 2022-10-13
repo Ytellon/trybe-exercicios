@@ -1,0 +1,108 @@
+use ("conteudo_trybe");
+db.inventory.insertMany([
+{ "item": "journal", "qty": 25, "size": { "h": 14, "w": 21, "uom": "cm" }, "status": "A" },
+{ "item": "notebook", "qty": 50, "size": { "h": 8.5, "w": 11, "uom": "in" }, "status": "A" },
+{ "item": "paper", "qty": 100, "size": { "h": 8.5, "w": 11, "uom": "in" }, "status": "D" },
+{ "item": "planner", "qty": 75, "size": { "h": 22.85, "w": 30, "uom": "cm" }, "status": "D" },
+{ "item": "postcard", "qty": 45, "size": { "h": 10, "w": 15.25, "uom": "cm" }, "status": "A" }
+]);
+
+use ("conteudo_trybe");
+db.products.insertOne({
+  _id: 100,
+  sku: "abc123",
+  quantity: 250,
+  instock: true,
+  reorder: false,
+  details: { model: "14Q2", make: "xyz" },
+  tags: [ "apparel", "clothing" ],
+  ratings: [ { by: "ijk", rating: 4 } ]
+})
+
+use ("conteudo_trybe");
+db.products.insertOne(
+  { "_id": 1, "item": "ABC", "price": NumberDecimal("10.99"), "qty": 25 }
+);
+
+use ("conteudo_trybe");
+db.products.insertOne(
+  { _id: 2, item: "Unknown" }
+);
+
+use ("conteudo_trybe");
+db.products.insertOne(
+  { _id: 3,  item: "XYZ", price: NumberLong("10") }
+);
+
+use ("conteudo_trybe");
+db.increment.insertOne(
+  {
+    _id: 1,
+    sku: "abc123",
+    quantity: 10,
+    metrics: {
+      orders: 2,
+      ratings: 3.5
+    }
+  }
+)
+
+use ("cinema");
+db.movies.drop();
+db.movies.insertMany([
+  {
+    title: "Batman",
+    category: [
+      "action",
+      "adventure"
+    ],
+    imdbRating: 7.7,
+    budget: 35,
+    ratings: [ 85, 100, 102, 105 ],
+    description: "The Dark Knight of Gotham City begins his war on crime with his first major enemy being Jack Napier, a criminal who becomes the clownishly homicidal Joker."
+  },
+  {
+    title: "Godzilla",
+    category: [
+      "action",
+      "adventure",
+      "sci-fi"
+    ],
+    imdbRating: 6.6,
+    budget: 10,
+    ratings: [ 78, 52, 95, 102 ],
+    description: "The world is beset by the appearance of monstrous creatures, but one of them may be the only one who can save humanity."
+  },
+  {
+    title: "Home Alone",
+    category: [
+      "family",
+      "comedy"
+    ],
+    imdbRating: 7.4,
+    ratings: [ 200, 99, 65 ],
+    description: "An eight-year-old troublemaker must protect his house from a pair of burglars when he is accidentally left home alone by his family during Christmas vacation."
+  },
+  {
+    title: "Matrix",
+    category: [
+      "sci-fi",
+      "action"
+    ],
+    imdbRating: 8.7,
+    budget: 15,
+    ratings: [ 77, 92, 150, 180 ],
+    description: "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence."
+  },
+  {
+    title: "Pulp Fiction",
+    category: [
+      "crime",
+      "drama"
+    ],
+    imdbRating: 8.9,
+    budget: 8,
+    ratings: [ 110, 84, 95, 90 ],
+    description: "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption."
+  }
+]);

@@ -1,0 +1,59 @@
+use ("conteudo_trybe");
+db.inventory.find();
+
+use ("conteudo_trybe");
+db.inventory.updateOne(
+  { item: "paper" },
+  { $set: { "size.uom": "cm", status: "P" } }
+);
+
+use ("conteudo_trybe");
+db.inventory.updateMany(
+  { "qty": { $lt: 50 } },
+  { $set: { "size.uom": "in", status: "P" } }
+);
+
+use("conteudo_trybe");
+db.products.find();
+
+use("conteudo_trybe");
+db.products.update(
+  { _id: 100 },
+  { $set: {
+      quantity: 500,
+      details: { model: "14Q3", make: "xyz" },
+      tags: [ "coats", "outerwear", "clothing" ]
+    }
+  }
+);
+
+use("conteudo_trybe");
+db.products.update(
+  { _id: 100 },
+  { $set: { "details.make": "zzz" } }
+);
+
+use("conteudo_trybe");
+db.products.update(
+  { _id: 100 },
+  { $set: {
+      "tags.1": "rain gear",
+      "ratings.0.rating": 2
+    }
+  }
+);
+
+use("conteudo_trybe");
+db.products.update(
+  { _id: 2 },
+  { $mul: { price: NumberLong("100") } }
+);
+
+use("conteudo_trybe");
+db.increment.find();
+
+use("conteudo_trybe");
+db.increment.update(
+  { sku: "abc123" },
+  { $inc: { quantity: -2, "metrics.orders": 1 } }
+);
