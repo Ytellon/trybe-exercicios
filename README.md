@@ -180,48 +180,48 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 24: Node.js - ORM & Autenticação
 
 - [x] 24-1: _ORM - Interface da aplicação com o banco de dados_
-- [ ] 24-2: _ORM - Associations_
-- [ ] 24-3: _JWT - (JSON Web Token)_
-- [ ] 24-4: _[Projeto - API de Blogs]()_
+- [x] 24-2: _ORM - Associations_
+- [x] 24-3: _JWT - (JSON Web Token)_
+- [x] 24-4: _[Projeto - API de Blogs]()_
 
 ##### Bloco 25: Deployment
 
-- [ ] 25-1: _Infraestrutura - Deploy com Heroku_
-- [ ] 25-2: _Deploy Docker & Heroku_
-- [ ] 25-3: _[Projeto - Stranger Things]()_
+- [x] 25-1: _Infraestrutura - Deploy com Heroku_
+- [x] 25-2: _Deploy Docker & Heroku_
+- [x] 25-3: _[Projeto - Stranger Things]()_
 
 ##### Bloco 26: TypeScript
 
-- [ ] 26-1: _Introdução ao TypeScript_
-- [ ] 26-2: _Tipagem Estática e Generics_
-- [ ] 26-3: _Express com TypeScript_
-- [ ] 26-4: _[Projeto - Trybe Smith]()_
+- [x] 26-1: _Introdução ao TypeScript_
+- [x] 26-2: _Tipagem Estática e Generics_
+- [x] 26-3: _Express com TypeScript_
+- [x] 26-4: _[Projeto - Trybe Smith]()_
 
 ##### Bloco 27: Programação Orientada a Objetos(POO) & SOLID
 
-- [ ] 27-1: _Introdução à Orientação a Objetos_
-- [ ] 27-2: _Herança e Interfaces_
-- [ ] 27-3: _Polimorfismo_
-- [ ] 27-4: _SOLID - Introdução_
-- [ ] 27-5: _SOLID - Continuação_
-- [ ] 27-6: _[Projeto - Trybers and Dragons]()_
+- [x] 27-1: _Introdução à Orientação a Objetos_
+- [x] 27-2: _Herança e Interfaces_
+- [x] 27-3: _Polimorfismo_
+- [x] 27-4: _SOLID - Introdução_
+- [x] 27-5: _SOLID - Continuação_
+- [x] 27-6: _[Projeto - Trybers and Dragons]()_
 
 ##### Bloco 28: Projeto - TFC - Trybe Futebol Clube
 
-- [ ] 28-3: _[Projeto - TFC - Trybe Futebol Clube]()_
+- [x] 28-3: _[Projeto - TFC - Trybe Futebol Clube]()_
 
 ##### Bloco 29: Introdução ao MongoDB
 
-- [ ] 29-1: _MongoDB - Introdução_
-- [ ] 29-2: _Filter Operators_
-- [ ] 29-3: _[Projeto - Data Flights]()_
+- [x] 29-1: _MongoDB - Introdução_
+- [x] 29-2: _Filter Operators_
+- [x] 29-3: _[Projeto - Data Flights]()_
 
 ##### Bloco 30: MongoBD - Updates Simples e Complexos
 
-- [ ] 30-1: _Update Simples
-- [ ] 30-2: _Updates Complexos - Arrays - Parte 1_
-- [ ] 30-3: _Updates Complexos - Arrays - Parte 2_
-- [ ] 30-4: _[Projeto - Commerce]()_
+- [x] 30-1: _Update Simples
+- [x] 30-2: _Updates Complexos - Arrays - Parte 1_
+- [x] 30-3: _Updates Complexos - Arrays - Parte 2_
+- [x] 30-4: _[Projeto - Commerce]()_
 
 ##### Bloco 31: MasterClass - VPS, CI/CD
 
