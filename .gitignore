@@ -3,6 +3,8 @@ node_modules
 /.pnp
 .pnp.js
 /.DS_Store
+.venv
+__pycache__
 
 # testing
 /coverage
