@@ -6,6 +6,9 @@
 
 - Identificar e escolher o uso de pilhas em diferentes casos.
 
+-- 
+
+// []: # dia-04-pilhas-e-filas/exercicios/README.md
 ---
 
 
